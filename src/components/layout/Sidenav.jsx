@@ -147,10 +147,10 @@ const SideNav = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className="">
+      <div className="sm:hidden">
         <Harmburger setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
       </div>
-      <div className="sm:hidden">
+      <div className="">
         <div
           className={`${
             mobileMenu ? "flex" : "hidden"
