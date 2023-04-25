@@ -1,8 +1,8 @@
 import Chart from "react-apexcharts";
-import UseData from "../../data/useData";
+import UseDatas from "../../data/UseDatas";
 
 const AreaChart = () => {
-  const { graphData } = UseData();
+  const { graphData } = UseDatas();
 
   const dates = Object.keys(graphData);
   const dataValues = Object.values(graphData);

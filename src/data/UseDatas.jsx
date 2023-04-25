@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Nigeria from "../assets/icons/Nigeria.svg";
 import germany from ".././assets/icons/germany.png";
 import ghana from ".././assets/icons/ghana.png";
@@ -11,7 +11,7 @@ import linkedin from ".././assets/icons/linked.svg";
 import Uk from ".././assets/icons/UK.png";
 import axios from "axios";
 
-const UseData = () => {
+const UseDatas = () => {
   const [graphData, setGraphData] = useState([]);
   const [location, setLocation] = useState([]);
   const [sources, setSources] = useState([]);
@@ -54,4 +54,4 @@ const UseData = () => {
   };
 };
 
-export default UseData;
+export default UseDatas;

@@ -1,9 +1,9 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import UseData from "../../data/useData";
+import UseDatas from "../../data/UseDatas";
 
 const Piechart = () => {
-  const { sources } = UseData();
+  const { sources } = UseDatas();
 
   const source = sources?.map((c) => `${c.source} ${c.percent}%`);
 

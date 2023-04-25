@@ -1,14 +1,14 @@
 import Layout from "../components/layout/Layout";
 import sun from ".././assets/icons/sun-cloud.png";
+import UseDatas from "../data/UseDatas";
 import Button from "../components/Button";
 import AreaChart from "../components/charts/Areachart";
-
 import Donutchart from "../components/charts/Donutchart";
-import UseData from "../data/useData";
 import Piechart from "../components/charts/Piechart";
 
 const Dashboard = () => {
-  const { location, flags, socials } = UseData();
+  const { location, flags, socials } = UseDatas();
+
   const btnTitles = [
     "1 Day",
     "3 Days",

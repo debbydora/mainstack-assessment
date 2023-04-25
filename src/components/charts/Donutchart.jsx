@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Chart from "react-apexcharts";
-import UseData from "../../data/useData";
+import UseDatas from "../../data/UseDatas";
 
 const Donutchart = () => {
-  const { location } = UseData();
+  const { location } = UseDatas();
 
   const countries = location?.map((c) => `${c.country} ${c.percent}%`);
 
