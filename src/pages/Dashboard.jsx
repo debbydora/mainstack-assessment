@@ -64,7 +64,7 @@ const Dashboard = () => {
           <AreaChart />
         </div>
         {/* fourth */}
-        <div className="flex flex-col lg:flex-row w-full justify-between mt-4 gap-4">
+        <div className="flex flex-col lg:flex-row w-full justify-between mt-4 gap-4 mb-4">
           {/* one */}
           <div className="border-bordergray border rounded-2xl mt-6 flex flex-col p-4 pr-2 w-full">
             {/* text */}
@@ -77,19 +77,18 @@ const Dashboard = () => {
               </p>
             </div>
 
-            <div className=" flex items-center justify-between mt-4  gap-2">
+            <div className=" flex items-center lg:mt-4">
               {/* flags */}
-              <div className="w-full flex flex-col gap-2.5 mt-12">
+              <div className="lg:flex flex-col gap-2.5 mt-10 hidden">
                 {flags.map((map, index) => (
                   <img
                     key={index}
                     src={map}
                     alt=""
-                    className="w-[21px] h-[15px] mr-6"
+                    className="w-[21px] h-[15px] lg:mr-2 mr-2"
                   />
                 ))}
               </div>
-
               <Donutchart />
             </div>
           </div>
@@ -105,20 +104,18 @@ const Dashboard = () => {
               </p>
             </div>
             {/* graph */}
-            <div className="mt-4 flex items-center  justify-between gap-2">
+            <div className="mt-4 flex items-center">
               {/* flags */}
-              <div className="w-full flex flex-col gap-2 mt-4">
+              <div className=" lg:flex flex-col gap-2 mt-2 hidden">
                 {socials.map((map, index) => (
                   <img
                     key={index}
                     src={map}
                     alt=""
-                    // className="w-[30px] h-[15px] mr-6"
-                    className="w-[21px] h-[15px] mr-6"
+                    className="w-[21px] h-[15px] mr-2 lg:mr-2"
                   />
                 ))}
               </div>
-
               <Piechart />
             </div>
           </div>

@@ -33,7 +33,28 @@ const Piechart = () => {
         offsetY: 0,
       },
     },
-
+    responsive: [
+      {
+        breakpoint: 1000,
+        options: {
+          legend: {
+            position: "left",
+            fontSize: "10px",
+            fontWeight: "bold",
+            offsetX: -30,
+            offsetY: 0,
+            markers: {
+              offsetX: 0,
+              offsetY: 0,
+            },
+          },
+          chart: {
+            id: "donut",
+            width: "300",
+          },
+        },
+      },
+    ],
     colors: ["#599EEA", "#844FF6", "#F09468", "#FAB70A", "#0FB77A"],
   };
 
@@ -42,8 +63,8 @@ const Piechart = () => {
       <Chart
         options={options}
         series={numbers}
-        width="336"
-        // height="400"
+        width="350"
+        height="400"
         type="donut"
       />
     </div>

@@ -13,7 +13,7 @@ const Donutchart = () => {
   const options = {
     chart: {
       id: "donut",
-      size: "70%",
+      // size: "70%",
     },
     labels: countries,
 
@@ -29,14 +29,34 @@ const Donutchart = () => {
       fontSize: "14px",
       fontWeight: "bold",
       offsetX: -50,
-      offsetY: 0,
+      // offsetY: -20,
       markers: {
-        offsetX: 148,
+        offsetX: 150,
         offsetY: 0,
       },
     },
-    // responsive: {},
-
+    responsive: [
+      {
+        breakpoint: 1000,
+        options: {
+          legend: {
+            position: "left",
+            offsetX: -30,
+            fontSize: "10px",
+            fontWeight: "bold",
+            offsetY: 0,
+            markers: {
+              offsetX: 0,
+              offsetY: 0,
+            },
+          },
+          chart: {
+            id: "donut",
+            width: "323",
+          },
+        },
+      },
+    ],
     colors: ["#599EEA", "#844FF6", "#F09468", "#FAB70A", "#0FB77A"],
   };
 
@@ -45,8 +65,8 @@ const Donutchart = () => {
       <Chart
         options={options}
         series={numbers}
-        width="365"
-        // height="400"
+        width="380"
+        height="400"
         type="donut"
       />
     </div>
