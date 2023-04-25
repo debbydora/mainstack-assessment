@@ -7,18 +7,7 @@ import Donutchart from "../components/charts/Donutchart";
 import Piechart from "../components/charts/Piechart";
 
 const Dashboard = () => {
-  const { location, flags, socials } = UseDatas();
-
-  const btnTitles = [
-    "1 Day",
-    "3 Days",
-    "7 Days",
-    "30 Days",
-    "All Time",
-    "Custom Date",
-  ];
-
-  const colors = ["#599EEA", "#844FF6", "#F09468", "#FAB70A", "#0FB77A"];
+  const { btnTitles, flags, socials } = UseDatas();
 
   return (
     <Layout>
@@ -36,7 +25,9 @@ const Dashboard = () => {
               Check out your dashboard summary.
             </p>
           </div>
-          <p className="text-orange text-sm leading-6">View analytics</p>
+          <p className="text-orange text-sm leading-6 cursor-pointer">
+            View analytics
+          </p>
         </div>
         {/* second */}
         <div className="flex flex-wrap gap-3 gap-x-4 lg:gap-3 mt-6 w-full">
@@ -72,7 +63,7 @@ const Dashboard = () => {
               <p className="text-fontblack text-lg leading-6 -tracking-[0.015em] font-bold">
                 Top Locations
               </p>
-              <p className="text-orange text-sm leading-[22px]">
+              <p className="text-orange text-sm leading-[22px] cursor-pointer">
                 View full reports
               </p>
             </div>
@@ -99,7 +90,7 @@ const Dashboard = () => {
               <p className="text-fontblack text-lg leading-6 -tracking-[0.015em] font-bold">
                 Top Referral source
               </p>
-              <p className="text-orange text-sm leading-[22px]">
+              <p className="text-orange text-sm leading-[22px] cursor-pointer">
                 View full reports
               </p>
             </div>

@@ -40,10 +40,18 @@ const UseDatas = () => {
   };
 
   const flags = [Nigeria, germany, ghana, finland, Uk];
+
   const socials = [google, instagram, facebook, linkedin];
-  // console.log("location", location);
-  // console.log("sources", sources);
-  // console.log("graph", graphData);
+
+  const btnTitles = [
+    "1 Day",
+    "3 Days",
+    "7 Days",
+    "30 Days",
+    "All Time",
+    "Custom Date",
+  ];
+  
 
   return {
     graphData,
@@ -51,6 +59,7 @@ const UseDatas = () => {
     sources,
     flags,
     socials,
+    btnTitles,
   };
 };
 
