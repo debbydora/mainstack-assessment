@@ -81,7 +81,7 @@ const SideNav = () => {
           {Menu2.map((menu, index) => (
             <Link to={menu.path} key={index}>
               <li
-                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700
+                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer  hover:bg-gray-200
                         ${location.pathname === menu.path && " text-orange"}`}
               >
                 <span
@@ -110,7 +110,7 @@ const SideNav = () => {
           {Menu3.map((menu, index) => (
             <Link to={menu.path} key={index}>
               <li
-                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700
+                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer hover:bg-gray-200 
                         ${location.pathname === menu.path && " text-orange"}`}
               >
                 <span
@@ -163,7 +163,7 @@ const SideNav = () => {
               onClick={() => setMobileMenu(false)}
             >
               <li
-                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700
+                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer hover:bg-gray-200 
                         ${location.pathname === menu.path && " text-orange"}`}
               >
                 <span
@@ -178,7 +178,7 @@ const SideNav = () => {
                 <span
                   className={` ${
                     location.pathname === menu.path && "text-orange"
-                  } p-2 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700`}
+                  } p-2 rounded-xl hover:bg-gray-200 `}
                 >
                   {menu.title}
                 </span>
@@ -193,7 +193,7 @@ const SideNav = () => {
               onClick={() => setMobileMenu(false)}
             >
               <li
-                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700
+                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer hover:bg-gray-200
                         ${location.pathname === menu.path && " text-orange"}`}
               >
                 <span
@@ -208,7 +208,7 @@ const SideNav = () => {
                 <span
                   className={` ${
                     location.pathname === menu.path && "text-orange"
-                  } p-2 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700`}
+                  } p-2 rounded-xl hover:bg-gray-200`}
                 >
                   {menu.title}
                 </span>
@@ -223,7 +223,7 @@ const SideNav = () => {
               onClick={() => setMobileMenu(false)}
             >
               <li
-                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700
+                className={`flex items-center gap-x-3 text-base font-normal rounded-lg cursor-pointer hover:bg-gray-200 
                         ${location.pathname === menu.path && " text-orange"}`}
               >
                 <span
@@ -238,7 +238,7 @@ const SideNav = () => {
                 <span
                   className={` ${
                     location.pathname === menu.path && "text-orange"
-                  } p-2 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700`}
+                  } p-2 rounded-xl hover:bg-gray-200 `}
                 >
                   {menu.title}
                 </span>

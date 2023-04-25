@@ -2,11 +2,13 @@ const Harmburger = ({ mobileMenu, setMobileMenu }) => {
   return (
     <button
       onClick={() => setMobileMenu(!mobileMenu)}
-      className={`${mobileMenu && "open"} block hamburger focus:outline-none`}
+      className={`${
+        mobileMenu && "open"
+      } block hamburger sm:hidden focus:outline-none`}
     >
-      <span className="hamburger-top dark:bg-slate-50"></span>
-      <span className="hamburger-middle dark:bg-slate-50"></span>
-      <span className="hamburger-bottom dark:bg-slate-50"></span>
+      <span className="hamburger-top"></span>
+      <span className="hamburger-middle"></span>
+      <span className="hamburger-bottom"></span>
     </button>
   );
 };
