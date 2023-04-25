@@ -51,7 +51,9 @@ const AreaChart = () => {
     },
 
     colors: ["#FF5403"],
-
+    stroke: {
+      curve: "straight",
+    },
     yaxis: {
       tooltip: {
         enabled: true,
